@@ -491,39 +491,20 @@ body.light-mode .certificate-card {
   font-style: italic;
 }
 
-.contact {
-  padding: 3rem 10%;
-  text-align: left; /* align text left for readability */
-}
-
-.contact h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.contact p {
-  margin-bottom: 1rem;
+.hero-contact {
+  margin-top: 1rem;
+  font-size: 0.95rem;
   color: #aaa;
+  line-height: 1.5;
 }
 
-.contact-list {
-  list-style: none;
-  padding-left: 0;
-  font-size: 1rem;
-  color: #fff;
-}
-
-.contact-list li {
-  margin-bottom: 0.8rem;
-}
-
-.contact-list a {
+.hero-contact a {
   color: #ff4b2b;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s, text-decoration 0.3s;
 }
 
-.contact-list a:hover {
+.hero-contact a:hover {
   color: #e13d1d;
   text-decoration: underline;
 }
