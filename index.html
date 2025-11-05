@@ -3,52 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Kulani</title>
+  <title>Portfolio | Kulani Nghondzweni</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <!-- SEO / LinkedIn preview -->
+  <meta name="description" content="Kulani Nghondzweni | Software Developer & Data Engineer Portfolio showcasing projects, skills, and certificates." />
+  <meta property="og:title" content="Kulani Nghondzweni Portfolio" />
+  <meta property="og:description" content="Software Developer & Data Engineer | Projects, Skills, Certificates." />
+  <meta property="og:image" content="assets/profile.jpg" />
 </head>
 <body>
   <header class="hero">
     <div class="hero-text">
       <p class="hello">Hello<span class="dot">.</span></p>
-      <h1>I’m <span class="name">Kulani Nghondzweni</span></h1>
+      <h1>I’m <span class="name" id="typed-name"></span></h1>
       <h2>Software Developer/Data Engineer</h2>
       <div class="buttons">
         <a href="#projects" class="btn primary">Got a project?</a>
-
         <a href="assets/Kulani_Nghondzweni_Resume.pdf" class="btn secondary" download="Kulani_Nghondzweni_Resume.pdf">
           📄 Download Resume
         </a>
-
         <a href="assets/Kulani_Nghondzweni_Resume.pdf" class="btn secondary" target="_blank">
           👀 View Resume
         </a>
       </div>
-
-
     </div>
     <div class="hero-image">
-        <div class="image-wrapper">
-            <img src="profile.jpg" alt="Profile photo" />
-        </div>
+      <div class="image-wrapper">
+        <img src="profile.jpg" alt="Profile photo" />
+      </div>
     </div>
   </header>
 
-  <nav class="skills-bar">
+  <nav class="skills-bar fade-in">
     <ul>
-      <li>HTML5</li>
-      <li>Python</li>
-      <li>Java</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Node.js</li>
-      <li>React</li>
-      <li>Git</li>
-      <li>GitHub</li>
+      <li title="1 years experience">HTML5</li>
+      <li title="2 years experience">Python</li>
+      <li title="1 years experience">Java</li>
+      <li title="1 years experience">CSS</li>
+      <li title="1 years experience">JavaScript</li>
+      <li title="1 year experience">Node.js</li>
+      <li title="6 months experience">React</li>
+      <li title="2 years experience">Git</li>
+      <li title="2 years experience">GitHub</li>
     </ul>
   </nav>
 
-  <section class="about">
+  <section class="about fade-in">
     <h2>About me</h2>
     <p>
       I started my software journey at WeThinkCode, where I’ve been building
@@ -62,125 +64,120 @@
     </div>
   </section>
 
-  <section class="roles">
-  <h2>What I Do</h2>
-  <div class="roles-grid">
-    <div class="role-card">
-      <i class="icon">💻</i>
-      <h3>Software Development</h3>
-      <p>Building scalable backend systems, APIs, and applications using Python and Java.</p>
+  <section class="roles fade-in">
+    <h2>What I Do</h2>
+    <div class="roles-grid">
+      <div class="role-card">
+        <i class="icon">💻</i>
+        <h3>Software Development</h3>
+        <p>Building scalable backend systems, APIs, and applications using Python and Java.</p>
+      </div>
+      <div class="role-card">
+        <i class="icon">🛠️</i>
+        <h3>Data Engineering</h3>
+        <p>Designing and working with data pipelines, ETL processes, and database management.</p>
+      </div>
+      <div class="role-card">
+        <i class="icon">🌐</i>
+        <h3>Web Development</h3>
+        <p>Developing responsive websites and portfolio projects with modern web technologies.</p>
+      </div>
+      <div class="role-card">
+        <i class="icon">🤝</i>
+        <h3>Collaboration & Problem Solving</h3>
+        <p>Working in teams, applying agile practices, and tackling challenges with clean solutions.</p>
+      </div>
     </div>
-    <div class="role-card">
-      <i class="icon">🛠️</i>
-      <h3>Data Engineering</h3>
-      <p>Designing and working with data pipelines, ETL processes, and database management.</p>
-    </div>
-    <div class="role-card">
-      <i class="icon">🌐</i>
-      <h3>Web Development</h3>
-      <p>Developing responsive websites and portfolio projects with modern web technologies.</p>
-    </div>
-    <div class="role-card">
-      <i class="icon">🤝</i>
-      <h3>Collaboration & Problem Solving</h3>
-      <p>Working in teams, applying agile practices, and tackling challenges with clean solutions.</p>
-        </div>
-    </div>
-    </section>
+  </section>
 
-
-<section id="projects" class="projects">
-  <h2>Projects</h2>
-  <div class="project-grid">
-    
-    <div class="project-card" onclick="showProject('proj1')">
-      <h3>Personal Portfolio Website</h3>
-      <p>The site you're viewing right now is a personal site built with HTML, CSS, and JS.</p>
+  <section id="projects" class="projects fade-in">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card" onclick="showProject('proj1')">
+        <h3>Personal Portfolio Website</h3>
+        <p>The site you're viewing right now is a personal site built with HTML, CSS, and JS.</p>
+      </div>
+      <div class="project-card" onclick="showProject('proj2')">
+        <h3>Data Pipeline Demo</h3>
+        <p>ETL process from CSV to SQL database.</p>
+      </div>
+      <div class="project-card" onclick="showProject('proj3')">
+        <h3>Networking Chat App</h3>
+        <p>Java-based client-server chat application.</p>
+      </div>
     </div>
 
-    <div class="project-card" onclick="showProject('proj2')">
-      <h3>Data Pipeline Demo</h3>
-      <p>ETL process from CSV to SQL database.</p>
-    </div>
-
-    <div class="project-card" onclick="showProject('proj3')">
-      <h3>Networking Chat App</h3>
-      <p>Java-based client-server chat application.</p>
-    </div>
-  </div>
-
-  <div id="proj1" class="project-modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('proj1')">&times;</span>
-      <h2>Personal Portfolio Website</h2>
-      <p>
-        This portfolio website showcases my skills, projects, and experience.
-        Built with HTML, CSS, and JavaScript, it features a responsive design and
-        interactive elements like smooth navigation, role animations, and project modals.
-        <br><br>
-        Future improvements include adding blog posts, downloadable CV, and backend services.
-      </p>
-      <a href="https://github.com/Kulani-Ngondzweni/Kulani-Ngondzweni.github.io" target="_blank" class="btn secondary">
-         View on GitHub
-      </a>
-    </div>
-  </div>
-
-  <div id="proj2" class="project-modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('proj2')">&times;</span>
-      <h2>Data Pipeline Demo</h2>
-      <p>
-        A demo ETL process that extracts data from CSV, transforms it using Python,
-        and loads it into a SQL database. Designed as part of my Data Engineering elective.
-        It demonstrates my ability to automate and handle data flow using clean, modular Python scripts.
-      </p>
-      <a href="https://github.com/Kulani-Nghondzweni/ETL_Data_Pipeline_" target="_blank" class="btn secondary">
-         View on GitHub
-      </a>
-    </div>
-  </div>
-
-  <div id="proj3" class="project-modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('proj3')">&times;</span>
-      <h2>Networking Chat App</h2>
-      <p>
-        A client-server chat application built in Java using sockets.
-        Supports multiple clients, real-time messaging, and simple command handling.
-        <br><br>
-         This project is currently in development — soon it will feature message encryption, user authentication, and group chats.
-      </p>
-      <a href="#" class="btn secondary" onclick="alert('This project is still in progress! Stay tuned for the GitHub link soon.')">
-        Coming Soon
-      </a>
-    </div>
-  </div>
-</section>
-
-<section id="certificates" class="certificates">
-  <h2>Certificates</h2>
-  <div class="certificate-grid">
-
-    <div class="certificate-card">
-      <h3>Generative AI Certificate</h3>
-      <p>Issued by: WeThinkCode_ / OpenAI</p>
-      <div class="cert-buttons">
-        <a href="assets/Kulani_Nghondzweni_GenAI.pdf" class="btn secondary" target="_blank">
-          View Certificate
-        </a>
-        <a href="assets/Kulani_Nghondzweni_GenAI.pdf" class="btn primary" download="Kulani_Nghondzweni_GenAI.pdf">
-          Download Certificate
+    <!-- Project Modals -->
+    <div id="proj1" class="project-modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('proj1')">&times;</span>
+        <h2>Personal Portfolio Website</h2>
+        <p>This portfolio website showcases my skills, projects, and experience.
+           Built with HTML, CSS, and JavaScript, it features a responsive design and
+           interactive elements like smooth navigation, role animations, and project modals.
+           <br><br>Future improvements include adding blog posts, downloadable CV, and backend services.</p>
+        <a href="https://github.com/Kulani-Ngondzweni/Kulani-Ngondzweni.github.io" target="_blank" class="btn secondary">
+           View on GitHub
         </a>
       </div>
     </div>
 
-  </div>
-</section>
+    <div id="proj2" class="project-modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('proj2')">&times;</span>
+        <h2>Data Pipeline Demo</h2>
+        <p>A demo ETL process that extracts data from CSV, transforms it using Python,
+           and loads it into a SQL database. Designed as part of my Data Engineering elective.
+           It demonstrates my ability to automate and handle data flow using clean, modular Python scripts.
+        </p>
+        <a href="https://github.com/Kulani-Ngondzweni/ETL_Data_Pipeline_" target="_blank" class="btn secondary">
+           View on GitHub
+        </a>
+      </div>
+    </div>
+
+    <div id="proj3" class="project-modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('proj3')">&times;</span>
+        <h2>Networking Chat App</h2>
+        <p>A client-server chat application built in Java using sockets.
+           Supports multiple clients, real-time messaging, and simple command handling.
+           <br><br>This project is currently in development — soon it will feature message encryption, user authentication, and group chats.
+        </p>
+        <a href="#" class="btn secondary" onclick="alert('This project is still in progress! Stay tuned for the GitHub link soon.')">
+          Coming Soon
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates" class="certificates fade-in">
+    <h2>Certificates</h2>
+    <div class="certificate-grid">
+      <div class="certificate-card">
+        <h3>Generative AI Certificate</h3>
+        <p>Issued by: WeThinkCode_ / OpenAI</p>
+        <div class="cert-buttons">
+          <a href="assets/Kulani_Nghondzweni_GenAI.pdf" class="btn secondary" target="_blank">
+            View Certificate
+          </a>
+          <a href="assets/Kulani_Nghondzweni_GenAI.pdf" class="btn primary" download="Kulani_Nghondzweni_GenAI.pdf">
+            Download Certificate
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<footer>
-  <p>© 2025 Kulani • Built with ❤️ using HTML, CSS & JS</p>
-</footer>
+<button id="theme-toggle" class="theme-toggle">🌙</button>
+
+
+<button id="scroll-top" class="scroll-top">⬆️</button>
+
+
+  <footer>
+    <p>© 2025 Kulani • Built with ❤️ using HTML, CSS & JS</p>
+  </footer>
 </body>
 </html>

@@ -348,3 +348,138 @@ footer {
   background: #ff4b2b;
   color: #fff;
 }
+
+/* Typing Animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+#typed-name {
+  display: inline-block;
+  border-right: 2px solid #ff4b2b;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+/* Fade-in Sections */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark/Light Toggle Button */
+.theme-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #ff4b2b;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  z-index: 1001;
+  transition: background 0.3s;
+}
+.theme-toggle:hover {
+  background: #e13d1d;
+}
+
+/* Scroll to Top Button */
+.scroll-top {
+  position: fixed;
+  bottom: 7rem;
+  right: 2rem;
+  background: #0d1117;
+  color: #ff4b2b;
+  border: 2px solid #ff4b2b;
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+  z-index: 1001;
+  transition: all 0.3s ease;
+}
+.scroll-top:hover {
+  background: #ff4b2b;
+  color: #fff;
+}
+
+/* Skill Tooltip */
+.skills-bar li {
+  position: relative;
+  cursor: pointer;
+}
+.skills-bar li:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff4b2b;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 1;
+}
+.skills-bar li::after {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Project Modal Animation */
+.project-modal .modal-content {
+  transform: scale(0.95);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.project-modal.show .modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+body.light-mode {
+  background: #f9f9f9;
+  color: #111;
+}
+body.light-mode header.hero {
+  background: linear-gradient(135deg, #fff, #eee);
+}
+body.light-mode .hero-text .name {
+  color: #ff4b2b;
+}
+body.light-mode .skills-bar {
+  background: #eee;
+  color: #111;
+}
+body.light-mode .projects, 
+body.light-mode .roles, 
+body.light-mode .certificates {
+  background: #fff;
+  color: #111;
+}
+body.light-mode .project-card,
+body.light-mode .role-card,
+body.light-mode .certificate-card {
+  background: #f4f4f4;
+  border-color: #ddd;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
