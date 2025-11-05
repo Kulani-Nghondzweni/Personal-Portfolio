@@ -6,13 +6,19 @@
   <title>Portfolio | Kulani Nghondzweni</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <!-- SEO / LinkedIn preview -->
-  <meta name="description" content="Kulani Nghondzweni | Software Developer & Data Engineer Portfolio showcasing projects, skills, and certificates." />
-  <meta property="og:title" content="Kulani Nghondzweni Portfolio" />
-  <meta property="og:description" content="Software Developer & Data Engineer | Projects, Skills, Certificates." />
+
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+
+  <meta name="description" content="Kulani Nghondzweni | Software Developer & Data Engineer portfolio showcasing projects, skills, certificates, and achievements." />
+  <meta name="keywords" content="Kulani Nghondzweni, Portfolio, Software Developer, Data Engineer, Python, Java, Web Development, Projects" />
+  <meta name="author" content="Kulani Nghondzweni" />
+
+  <meta property="og:title" content="Kulani Nghondzweni | Software Developer & Data Engineer" />
+  <meta property="og:description" content="Portfolio showcasing projects, skills, certificates, and achievements." />
   <meta property="og:image" content="assets/profile.jpg" />
+  <meta property="og:type" content="website" />
 </head>
+
 <body>
   <header class="hero">
     <div class="hero-text">
@@ -192,6 +198,17 @@
       </div>
     </div>
   </section>
+
+  <section id="contact-form" class="contact fade-in">
+    <h2>Send Me a Message</h2>
+    <form id="emailForm">
+      <input type="text" name="from_name" placeholder="Your Name" required>
+      <input type="email" name="from_email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+  </section>
+
 
 
 

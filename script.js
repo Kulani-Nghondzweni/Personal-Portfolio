@@ -70,3 +70,10 @@ function closeModal(id) {
   setTimeout(() => modal.style.display = 'none', 300);
 }
 
+document.getElementById("emailForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  emailjs.sendForm('service_40uhtrt', 'template_di1a38v', this)
+    .then(() => alert("Message sent successfully!"))
+    .catch(() => alert("Failed to send message. Please try again."));
+});
