@@ -483,3 +483,47 @@ body.light-mode .certificate-card {
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+/* Tagline */
+.hero-text .tagline {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.contact {
+  padding: 3rem 10%;
+  text-align: left; /* align text left for readability */
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  margin-bottom: 1rem;
+  color: #aaa;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.contact-list li {
+  margin-bottom: 0.8rem;
+}
+
+.contact-list a {
+  color: #ff4b2b;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-list a:hover {
+  color: #e13d1d;
+  text-decoration: underline;
+}

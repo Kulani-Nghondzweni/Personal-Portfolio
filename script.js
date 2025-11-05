@@ -70,4 +70,3 @@ function closeModal(id) {
   setTimeout(() => modal.style.display = 'none', 300);
 }
 
-
