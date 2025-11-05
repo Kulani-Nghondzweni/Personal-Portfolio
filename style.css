@@ -508,3 +508,26 @@ body.light-mode .certificate-card {
   color: #e13d1d;
   text-decoration: underline;
 }
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.timeline-item {
+  background: #161b22;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #ff4b2b;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.timeline-item h4 {
+  margin-bottom: 0.5rem;
+  color: #ff4b2b;
+}
+.timeline-item p {
+  color: #ccc;
+  margin: 0;
+}
